@@ -27,9 +27,6 @@ public class AuthorRepository {
     }
 
 
-
-
-
     public Author load(int authorId) {
 
         String sql = "SELECT * FROM author WHERE author_id = ?";
@@ -37,8 +34,8 @@ public class AuthorRepository {
             pstmt.setInt(1, authorId);
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
-                String name = rs.getString("name");
-                String surname = rs.getString("surname");
+                String name = rs.getString("first_name");
+                String surname = rs.getString("last_name");
                 int age = rs.getInt("age");
                 Author author = new Author(name, surname, age);
                 author.setId(authorId);

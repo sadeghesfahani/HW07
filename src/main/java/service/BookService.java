@@ -24,9 +24,10 @@ public class BookService {
         this.authorRepository = new AuthorRepository(connection);
     }
 
-    public void addBook(String title, Date publicationYear, int authorId) {
+    public Book addBook(String title, int publicationYear, int authorId) {
         // Load author from repository
         Author author = authorRepository.load(authorId);
+        System.out.println("hi" + author.getId());
         if (author == null) {
             throw new IllegalArgumentException("Author with id " + authorId + " not found");
         }
@@ -34,7 +35,9 @@ public class BookService {
         // Create book object
         Book book = new Book(title, 10, publicationYear, author);
 
+
         // Save book to repository
         bookRepository.save(book);
+        return book;
     }
 }

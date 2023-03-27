@@ -18,7 +18,7 @@ public class BookRepository {
                     "INSERT INTO book (title,year_published , author_id) VALUES (?, ?, ?)"
             );
             statement.setString(1, book.getTitle());
-            statement.setDate(2, book.getYear());
+            statement.setInt(2, book.getYear());
             statement.setInt(3, book.getAuthor().getId());
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -29,13 +29,13 @@ public class BookRepository {
     public Book load(int bookId) {
         try {
             PreparedStatement statement = connection.prepareStatement(
-                    "SELECT * FROM book WHERE id = ?"
+                    "SELECT * FROM book WHERE book_id = ?"
             );
             statement.setInt(1, bookId);
             ResultSet rs = statement.executeQuery();
             if (rs.next()) {
                 String title = rs.getString("title");
-                Date year = rs.getDate("year");
+                int year = rs.getInt("year");
                 int authorId = rs.getInt("author_id");
                 Author author = loadAuthor(authorId);
                 return new Book(title, bookId, year, author);

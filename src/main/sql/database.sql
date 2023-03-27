@@ -9,7 +9,7 @@ CREATE TABLE author (
 CREATE TABLE book (
                       book_id SERIAL PRIMARY KEY,
                       title VARCHAR(100) NOT NULL,
-                      year_published INT NOT NULL,
+                      year_published Date NOT NULL,
                       author_id INT NOT NULL,
                       FOREIGN KEY (author_id) REFERENCES author (author_id)
 );

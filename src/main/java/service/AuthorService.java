@@ -19,9 +19,10 @@ public class AuthorService {
         authorRepository = new AuthorRepository(connection);
     }
 
-    public void register(String firstName, String lastName, int age) throws SQLException {
+    public Author register(String firstName, String lastName, int age) throws SQLException {
         Author author = new Author(firstName, lastName, age);
         authorRepository.add(author);
+        return author;
     }
 
 
