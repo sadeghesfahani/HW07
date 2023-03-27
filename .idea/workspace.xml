@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3093d7d8-120c-49ff-92c0-0f5eade66f79" name="Changes" comment="Add id to book">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sql/database.sql" afterDir="false" />
+    <list default="true" id="3093d7d8-120c-49ff-92c0-0f5eade66f79" name="Changes" comment="Implement author and book repository alongside of database creation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AuthorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679893463861</updated>
       <workItem from="1679893463862" duration="7129000" />
-      <workItem from="1679924063621" duration="1469000" />
+      <workItem from="1679924063621" duration="2599000" />
     </task>
     <task id="LOCAL-00001" summary="Add entities&#10;&#10;book and author entity fully implemented">
       <created>1679895250056</created>
@@ -129,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679903025918</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implement author and book repository alongside of database creation">
+      <created>1679927008467</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679927008467</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +154,7 @@
     <MESSAGE value="Implement database connection pool" />
     <MESSAGE value="Implement Author part partially&#10;&#10;having intermedian table is yet to be done." />
     <MESSAGE value="Add id to book" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add id to book" />
+    <MESSAGE value="Implement author and book repository alongside of database creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement author and book repository alongside of database creation" />
   </component>
 </project>

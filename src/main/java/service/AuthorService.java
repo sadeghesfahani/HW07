@@ -2,6 +2,7 @@ package service;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import entity.Author;
 import repository.AuthorRepository;
 
 import javax.sql.DataSource;
@@ -16,6 +17,11 @@ public class AuthorService {
         DataSource dataSource = new HikariDataSource(config);
         connection = dataSource.getConnection();
         authorRepository = new AuthorRepository(connection);
+    }
+
+    public void register(String firstName, String lastName, int age) throws SQLException {
+        Author author = new Author(firstName, lastName, age);
+        authorRepository.add(author);
     }
 
 
