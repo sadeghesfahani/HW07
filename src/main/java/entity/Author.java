@@ -2,12 +2,14 @@ package entity;
 
 public class Author {
     private String name;
+    private int id;
     private String surname;
     private int age;
 
     private Book[] books;
 
     public Author(String name, String surname, int age) {
+
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -52,5 +54,9 @@ public class Author {
         }
         newBooks[newBooks.length - 1] = book;
         books = newBooks;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
