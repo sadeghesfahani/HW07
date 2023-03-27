@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3093d7d8-120c-49ff-92c0-0f5eade66f79" name="Changes" comment="Implement repository&#10;&#10;repository interface created">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/logback.xml" afterDir="false" />
+    <list default="true" id="3093d7d8-120c-49ff-92c0-0f5eade66f79" name="Changes" comment="Add id to book">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sql/database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/AuthorRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Tag Library Descriptor" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,6 +63,9 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "PostgreSQL"
     ]
   }
 }]]></component>
@@ -84,7 +91,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679893463861</updated>
-      <workItem from="1679893463862" duration="4568000" />
+      <workItem from="1679893463862" duration="7129000" />
+      <workItem from="1679924063621" duration="1469000" />
     </task>
     <task id="LOCAL-00001" summary="Add entities&#10;&#10;book and author entity fully implemented">
       <created>1679895250056</created>
@@ -100,15 +108,50 @@
       <option name="project" value="LOCAL" />
       <updated>1679895285448</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implement database connection pool">
+      <created>1679901052446</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679901052446</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implement Author part partially&#10;&#10;having intermedian table is yet to be done.">
+      <created>1679902982887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679902982887</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add id to book">
+      <created>1679903025918</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679903025918</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add entities&#10;&#10;book and author entity fully implemented" />
     <MESSAGE value="Implement repository&#10;&#10;repository interface created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement repository&#10;&#10;repository interface created" />
+    <MESSAGE value="Implement database connection pool" />
+    <MESSAGE value="Implement Author part partially&#10;&#10;having intermedian table is yet to be done." />
+    <MESSAGE value="Add id to book" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add id to book" />
   </component>
 </project>

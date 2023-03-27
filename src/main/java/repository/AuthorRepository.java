@@ -13,7 +13,7 @@ public class AuthorRepository {
 
 
     public void add(Author author) throws SQLException {
-        String sql = "INSERT INTO author (name, surname, age) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO author (first_name, last_name, age) VALUES (?, ?, ?)";
         PreparedStatement pstmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         pstmt.setString(1, author.getName());
         pstmt.setString(2, author.getSurname());
@@ -32,7 +32,7 @@ public class AuthorRepository {
 
     public Author load(int authorId) {
 
-        String sql = "SELECT * FROM author WHERE id = ?";
+        String sql = "SELECT * FROM author WHERE author_id = ?";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setInt(1, authorId);
             ResultSet rs = pstmt.executeQuery();

@@ -1,12 +1,20 @@
 package entity;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 public class Book {
     private String title;
     private int id;
     private Date year;
     private Author author;
+
+    public Book(String title, int id, Date year, Author author) {
+        this.title = title;
+        this.id = id;
+        this.year = year;
+        this.author = author;
+    }
 
     public String getTitle() {
         return title;

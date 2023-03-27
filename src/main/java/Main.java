@@ -18,8 +18,10 @@ public class Main {
         DataSource dataSource = new HikariDataSource(config);
         try (Connection conn = dataSource.getConnection();
              Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery("SELECT * FROM legal")) {
-
+             ResultSet rs = stmt.executeQuery("SELECT * FROM answer")) {
+            while (rs.next()) {
+                System.out.println(rs.getString("name"));
+            }
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
