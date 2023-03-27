@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Book {
     private String title;
+    private int id;
     private Date year;
     private Author author;
 
@@ -17,6 +18,13 @@ public class Book {
 
     public Date getYear() {
         return year;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setYear(Date year) {
